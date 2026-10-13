@@ -61,26 +61,27 @@
   <header>
     <div class="brand">StepHaven</div>
     <h1>Privacy Policy</h1>
-    <p class="updated">Effective 12 October 2026</p>
+    <p class="updated">Effective 13 October 2026</p>
   </header>
 
   <section class="summary">
     <p>The short version</p>
     <ul>
-      <li>Your step count (and wheelchair pushes or active calories, if you count them) never leaves your phone.</li>
+      <li>Your step count (and wheelchair pushes, or the workout data of an Ember you start) never leaves your phone.</li>
       <li>There are no accounts and no StepHaven servers. Your havens are stored on your phone and in your own iCloud.</li>
       <li>StepHaven has no ads, does no tracking, and never sells or rents your data.</li>
-      <li>The only analytics are anonymous usage counts and purchase totals, with no health data and nothing you've typed.</li>
+      <li>The only analytics are anonymous usage counts, purchase totals and which Apple Ads ad (if any) led to a download, with no health data and nothing you've typed.</li>
     </ul>
   </section>
 
   <p>StepHaven is a city-building game for iPhone: the steps you walk become points you spend on a town. This policy explains what information the app uses, where it goes, and the choices you have.</p>
 
   <h2>Steps and Apple Health</h2>
-  <p>If you allow it, StepHaven reads your step count from Apple Health to work out how many points you've earned. If you use a wheelchair and turn on Count Wheelchair Pushes, it also reads the wheelchair pushes your Apple Watch records, which earn points the same way. If you turn on Count Other Activity, it also reads the active calories (Active Energy) your Apple Watch or iPhone records, so activities like cycling or swimming earn points too. It only reads steps and, if you turn them on, pushes and active calories; it never writes to Health and reads nothing else there.</p>
+  <p>If you allow it, StepHaven reads your step count from Apple Health to work out how many points you've earned. If you use a wheelchair and turn on Count Wheelchair Pushes, it also reads the wheelchair pushes your Apple Watch records, which earn points the same way. When you light an Ember before a workout, it also reads the active calories (Active Energy) and exercise minutes your Apple Watch records during that Ember only, so workouts like cycling or swimming can earn points too. It reads nothing outside the Embers you start. It only reads steps and, if you use them, pushes and Ember workout data; it never writes to Health and reads nothing else there.</p>
   <ul>
-    <li>Your step, push and activity data is used on your phone to calculate points and boosters. Whether you count pushes or other activity is a setting kept on your phone; it isn't backed up or sent anywhere. It is never sent to us, to analytics, or to anyone else, and it is never used for advertising.</li>
-    <li>You can turn this off at any time in the Settings app, under Health → Data Access &amp; Devices → StepHaven. The game still works without it; you just won't earn points from walking, pushing or other activity.</li>
+    <li>Your step, push and workout data is used on your phone to calculate points and boosters. Whether you count pushes is a setting kept on your phone, and the Embers you light (when and for how long) are kept on your phone for the app, its widgets and its Live Activity; neither is backed up or sent anywhere. It is never sent to us, to analytics, or to anyone else, and it is never used for advertising.</li>
+    <li>You can turn this off at any time in the Settings app, under Health → Data Access &amp; Devices → StepHaven. The game still works without it; you just won't earn points from walking, pushing or workouts.</li>
+    <li>StepHaven's widgets show your points and today's steps on your Home Screen and Lock Screen. That information is shared only between the app and its widgets on your phone.</li>
   </ul>
 
   <h2>Your havens and progress</h2>
@@ -93,19 +94,24 @@
   <ul>
     <li>Everyone in a shared haven can see and change what's built there. Each item records which player placed it, so that an item someone else removes can be returned to the player who placed it. Players are identified by a random number created when the app is installed, never by email or Apple Account.</li>
     <li>You can choose a name and a colour to show your friends in shared havens (in the app's Settings). It's optional and can be anything you like; you don't need to use your real name. When you choose one, it is stored with each shared haven you're in, where everyone in that haven can see it, for example on things you build. It is also kept with your iCloud backup so it comes back on a new phone. It is never included in analytics.</li>
-    <li>Joining uses a six-character code. The code is stored in Apple's public CloudKit database alongside the haven's name and the link needed to join, so anyone you give the code to can join the haven and make changes. Only share it with people you trust.</li>
+    <li>Joining uses a six-character code. The code is stored in Apple's public CloudKit database alongside the haven's name and the link needed to join. Someone with the code can ask to join, and the person who started the haven decides whether to let them in. A request to join is kept in the public CloudKit database for up to seven days and holds the name and colour you chose (if any) and an anonymous iCloud identifier that Apple gives StepHaven, so the haven's creator can add you. Only share the code with people you trust.</li>
+    <li>The person who started a shared haven can remove a player. For this, each player's entry in the haven's list includes the same anonymous iCloud identifier. It is not your Apple Account, email or name.</li>
     <li>Each shared haven keeps a list of who is in it, by the same random number, with the dates each player joined and left, the name and colour each player chose (if any), and the haven's progress level when each player joined. It is used to show who is in a haven, how many players it has, and when everyone has left, and so that joining a haven someone else has built up doesn't count as your own progress.</li>
     <li>The haven's name, and the time zone of the person who started it (so everyone sees the same time of day), are visible to everyone in the haven.</li>
   </ul>
-  <p>Nobody can delete a shared haven for everyone, including the person who started it, because friends may still be building there. When you leave one, it moves to Recently Deleted for three days, where you can bring it back. After that it is removed from your device. Once every player has left and three days have passed, the haven and its join code are deleted from iCloud.</p>
+  <p>Nobody can delete a shared haven for everyone, including the person who started it, because friends may still be building there. When you leave one, it is removed from your device at once, and what you built stays in the haven for your friends. Once every player has left, the haven and its join code are deleted from iCloud.</p>
 
   <h2>Anonymous analytics</h2>
   <p>StepHaven uses <a href="https://telemetrydeck.com/privacy/">TelemetryDeck</a> to count how the app is used, for example how many people finish the introduction, open the Workshop, or view the StepHaven+ screen. TelemetryDeck is designed for privacy: it doesn't collect personal data, and the identifier it uses is a one-way hash created on your device, so it can't be linked back to you.</p>
   <ul>
-    <li>Analytics never include health data (no step, push or calorie counts, not even rough ranges, and nothing about whether you've connected Apple Health or count pushes or other activity) or anything you've typed, such as haven names, building names or join codes.</li>
+    <li>Analytics never include health data (no step, push or calorie counts, not even rough ranges, and nothing about whether you've connected Apple Health or count pushes) or anything you've typed, such as haven names, building names or join codes. For Embers, analytics count only that one was lit, its chosen length, where it was lit from (such as the app, a widget or Siri) and whether it earned any points, never how many points or any calorie or minute figures.</li>
+    <li>The welcome screens may ask where you heard about StepHaven. Answering is optional; if you pick an answer (such as TikTok or a friend), only that choice is counted.</li>
     <li>When you buy something, the analytics count the purchase: which product, whether it was a free trial, the App Store country, the currency and the price. They don't include anything that identifies you or your Apple Account.</li>
     <li>The data is used only to improve the game. It is not used for advertising and is not combined with data from other apps or websites.</li>
   </ul>
+
+  <h2>Measuring Apple Ads</h2>
+  <p>StepHaven may be advertised with Apple Ads. To tell whether those ads work, the first time you open the app it asks Apple's AdServices framework whether StepHaven was installed from an Apple Ads ad. If it was, Apple returns which campaign, ad group, keyword and ad led to the download, the type of download and the App Store country, and the app counts that once in the anonymous analytics above. If it wasn't, nothing is counted. This uses no advertising identifier (IDFA), doesn't track you across other apps or websites, and the app never asks for tracking permission. iOS may also tell Apple's ad networks (SKAdNetwork) that the app was installed, which is done by Apple without identifying you.</p>
 
   <h2>Crash and performance reports</h2>
   <p>iOS can give apps reports about crashes, freezes and slow launches through Apple's MetricKit. StepHaven keeps the most recent reports on your phone. It sends only the type of problem (for example, "a crash" and its technical cause) through the anonymous analytics above, so problems can be found and fixed. The reports contain technical information about the app, not personal information.</p>
@@ -121,13 +127,13 @@
   <ul>
     <li>No accounts, no sign-up, and no email address or phone number collected.</li>
     <li>No location data and no contacts.</li>
-    <li>No advertising and no advertising identifiers, and no tracking across other apps or websites.</li>
+    <li>No ads in the game, no advertising identifiers, and no tracking across other apps or websites.</li>
     <li>No selling, renting or trading of any data.</li>
   </ul>
 
   <h2>Deleting your data</h2>
   <ul>
-    <li>Delete a haven from the Havens screen in the app. It waits in Recently Deleted for three days in case you change your mind, then it is removed from your phone and from your iCloud backup. A shared haven is removed from iCloud once every player has left (see Shared havens).</li>
+    <li>Delete a haven from the Havens screen in the app. It is removed from your phone and from your iCloud backup straight away, and the pieces you'd placed go back to your inventory. A shared haven is removed from iCloud once every player has left (see Shared havens).</li>
     <li>Delete all of StepHaven's iCloud data in the Settings app: your name → iCloud → Storage → StepHaven.</li>
     <li>Deleting the app removes everything stored on your phone.</li>
   </ul>
