@@ -61,7 +61,7 @@
   <header>
     <div class="brand">StepHaven</div>
     <h1>Privacy Policy</h1>
-    <p class="updated">Effective 28 October 2026</p>
+    <p class="updated">Effective 2 November 2026</p>
   </header>
 
   <section class="summary">
@@ -70,7 +70,7 @@
       <li>Your step count (and wheelchair pushes, or the workout data of an Ember you start) is used on your phone. It is never sent to us, to analytics or to anyone else, and it is never stored in StepHaven's iCloud data.</li>
       <li>There are no accounts. Your havens are stored on your phone and in your own iCloud, which we can't see.</li>
       <li>StepHaven has no ads, does no tracking, and never sells or shares your data for advertising.</li>
-      <li>We only receive what's described below: anonymous usage counts, the join codes, join requests, player names and reports that shared havens need, and bug reports you choose to send.</li>
+      <li>We only receive what's described below: anonymous usage counts, the join codes, join requests, player names and reports that shared havens need, the havens you choose to share as passports, and bug reports or survey answers you choose to send.</li>
     </ul>
   </section>
 
@@ -109,6 +109,19 @@
     <li><strong>The Haven Survey.</strong> If you answer the Haven Survey (Settings → Help → Share Feedback), your choices, anything you write in the note, the app's version and build, your iPhone model, iOS version and language, and roughly how long you've played (one week, two to four, or five or more) are saved with your anonymous iCloud identifier. Only you and StepHaven's developer can read them. They never include your steps, level or anything from Apple Health. We use them only to decide what to fix and build next. If the survey can't be sent, it waits on your phone and is sent later.</li>
   </ul>
   <p>Nobody can delete a shared haven for everyone from inside the app, because friends may still be building there. When you leave one, it's removed from your phone at once, and what you built stays in the haven for your friends. Once every player has left, the haven and its join code are deleted from iCloud. If the person who started a haven deletes StepHaven's data from their iCloud (see Deleting your data), that haven is deleted for everyone.</p>
+
+  <h2>Passports</h2>
+  <p>If you make a passport for one of your havens, a copy of that haven is saved in Apple's <strong>public</strong> CloudKit database so friends can open it, and walk round it, from a link or QR code. Anyone who has the link can open it, up to the number of people you choose. The copy holds:</p>
+  <ul>
+    <li>what's built in the haven, its look (season and time-of-day settings) and the time zone its clock follows, but not who placed each item;</li>
+    <li>the haven's name and the name and colour you chose to show friends (both checked against the word filter), the names of any Workshop buildings in it, and pet names that pass the filter;</li>
+    <li>a small picture of the haven's map, if it has one;</li>
+    <li>when it was last updated, how many people may open it, and your anonymous iCloud identifier, so only you can update it or turn it off.</li>
+  </ul>
+  <p>It never holds step counts, your level or anything from Apple Health.</p>
+  <p>A passport doesn't expire. When you turn its access off, the copy of the haven and its picture are deleted from the public database, and only a note that access is off is kept (with the haven's name and your chosen name), so old links can say so. Turning access back on saves the haven again, as it is then. Deleting the haven turns its passport off.</p>
+  <p>When someone opens a passport that has a limit on how many people may open it, the app saves their anonymous iCloud identifier against it, to count them. If someone reports a passport, their anonymous iCloud identifier is saved with the report; after three reports the passport is hidden until StepHaven's developer looks at it. The app on other players' phones can read these records, because that's how it counts views and reports. None of these identifiers is your Apple Account, email or name.</p>
+  <p>The passports you've opened are listed on your phone (and in your iCloud backup) so you can find them again; you can remove any of them.</p>
 
   <h2>Reporting a bug</h2>
   <p>If you send a bug report from the app (Settings → Help → Report a Bug), it's stored in Apple's public CloudKit database, readable only by you and StepHaven's developer. It holds the category you pick and what you write, the app's version and build, your iPhone model, iOS version and the app's language, how many havens you have and whether you're in a shared haven, a picture of your haven's map if you choose to add one, and your anonymous iCloud identifier. It never includes step counts. If it can't be sent, the app offers to send it by email instead.</p>
@@ -149,7 +162,7 @@
 
   <h2>Who handles your data</h2>
   <ul>
-    <li><strong>Apple</strong> provides Apple Health, iCloud and CloudKit (where havens, backups, join codes, requests and reports are stored), the App Store, Apple Ads measurement and MetricKit, under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. Apple may store this data outside your country.</li>
+    <li><strong>Apple</strong> provides Apple Health, iCloud and CloudKit (where havens, backups, passports, join codes, requests and reports are stored), the App Store, Apple Ads measurement and MetricKit, under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. Apple may store this data outside your country.</li>
     <li><strong>TelemetryDeck</strong> provides the anonymous analytics, under <a href="https://telemetrydeck.com/privacy/">its privacy policy</a>.</li>
   </ul>
 
@@ -157,7 +170,8 @@
   <ul>
     <li>Your havens, progress and backup: until you delete them (see below).</li>
     <li>Join codes: until everyone has left the haven. Join requests: up to seven days. Decline and block records: until the player is unblocked.</li>
-    <li>Reports and bug reports: until they're dealt with, and no longer than a year.</li>
+    <li>Passports: until you turn their access off or delete the haven; after that, only a note that access is off, with the haven's name and your chosen name. Views counted against a passport: as long as it exists.</li>
+    <li>Reports (on players or passports) and bug reports: until they're dealt with, and no longer than a year.</li>
     <li>Player and haven names kept for checking: no longer than a year after we first see them.</li>
     <li>Emails: as long as needed to help you.</li>
     <li>Analytics: kept by TelemetryDeck in a form that can't be linked to you.</li>
@@ -167,6 +181,7 @@
   <ul>
     <li>Delete a haven from the Havens screen in the app. It's removed from your phone at once and from your iCloud backup as soon as you're online, and the pieces you'd placed go back to your inventory. A shared haven is removed from iCloud once every player has left (see Shared havens).</li>
     <li>Delete all of StepHaven's iCloud data in the Settings app: your name → iCloud → Storage → StepHaven. This also deletes any shared havens you started, for everyone in them.</li>
+    <li>Turn a passport's access off from its page in the app (a haven's card → Options → Passport); the copy of the haven is deleted from the public database at once.</li>
     <li>Withdraw a join request from the Havens screen. To have a report, bug report, a copy of your name or anything else in the public database removed, email us.</li>
     <li>Deleting the app removes everything stored on your phone, including its widgets' data.</li>
   </ul>
