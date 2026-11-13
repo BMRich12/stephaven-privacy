@@ -61,7 +61,7 @@
   <header>
     <div class="brand">StepHaven</div>
     <h1>Privacy Policy</h1>
-    <p class="updated">Effective 8 November 2026</p>
+    <p class="updated">Effective 13 November 2026</p>
   </header>
 
   <section class="summary">
@@ -70,7 +70,7 @@
       <li>Your step count (and wheelchair pushes, or the workout data of an Ember you start) is used on your phone. It is never sent to us or to anyone else, and it is never stored in StepHaven's iCloud data. Analytics only learn which broad band your game level is in (see Anonymous analytics).</li>
       <li>There are no accounts. Your havens are stored on your phone and in your own iCloud, which we can't see.</li>
       <li>StepHaven has no ads, does no tracking, and never sells or shares your data for advertising.</li>
-      <li>We only receive what's described below: anonymous usage counts, the join codes, join requests, player names and reports that shared havens need, the havens you choose to share as passports, and bug reports or survey answers you choose to send.</li>
+      <li>We only receive what's described below: anonymous usage counts, the join codes, join requests, player names and reports that shared havens need, the havens you choose to share as passports, bug reports or survey answers you choose to send, and the nomination sent when a passport wears the Gilded Passport cover.</li>
     </ul>
   </section>
 
@@ -121,6 +121,7 @@
   <p>It never holds step counts, your level or anything from Apple Health.</p>
   <p>A passport doesn't expire. When you turn its access off, the copy of the haven and its picture are deleted from the public database, and only a note that access is off is kept (with the haven's name and your chosen name), so old links can say so. Turning access back on saves the haven again, as it is then. Deleting the haven turns its passport off.</p>
   <p>When someone opens a passport that has a limit on how many people may open it, the app saves their anonymous iCloud identifier against it, to count them. If someone reports a passport, their anonymous iCloud identifier is saved with the report; after three reports the passport is hidden until StepHaven's developer looks at it. The app on other players' phones can read these records, because that's how it counts views and reports. None of these identifiers is your Apple Account, email or name.</p>
+  <p>If one of your passports wears the Gilded Passport cover (sent with an invitation to Featured Havens), the app saves a nomination in the public CloudKit database so StepHaven's developer can look at the haven for featuring. It holds the passport's code, the haven's name, your chosen name, which copy of the cover it wears, when it was nominated, and your anonymous iCloud identifier. Taking the cover off doesn't send anything more.</p>
   <p>The passports you've opened are listed on your phone (and in your iCloud backup) so you can find them again; you can remove any of them.</p>
 
   <h2>Friends</h2>
@@ -136,6 +137,7 @@
 
   <h2>Reporting a bug</h2>
   <p>If you send a bug report from the app (Settings → Help → Report a Bug), it's stored in Apple's public CloudKit database, readable only by you and StepHaven's developer. It holds the category you pick and what you write, the app's version and build, your iPhone model, iOS version and the app's language, how many havens you have and whether you're in a shared haven, a picture of your haven's map if you choose to add one, and your anonymous iCloud identifier. It never includes step counts. If it can't be sent, the app offers to send it by email instead.</p>
+  <p>If StepHaven's developer answers a report, the answer arrives as a letter in the game's mailbox. To deliver it, the app keeps one small record for your phone in Apple's public CloudKit database, named from your anonymous iCloud identifier and readable only by you and StepHaven's developer. It holds only the letters written to you, signed so the app can tell they came from us.</p>
 
   <h2>Emailing us</h2>
   <p>If you email us, or send a report or bug report by email, we receive your email address and whatever the email contains (a report sent by email includes the player and haven details listed above). We use it only to answer you and look into the problem.</p>
@@ -185,6 +187,8 @@
     <li>Join codes: until everyone has left the haven. Join requests: up to seven days. Decline and block records: until the player is unblocked.</li>
     <li>Passports: until you turn their access off or delete the haven; after that, only a note that access is off, with the haven's name and your chosen name. Views counted against a passport: as long as it exists.</li>
     <li>Reports (on players or passports) and bug reports: until they're dealt with, and no longer than a year.</li>
+    <li>Letters written to you in reply to a report: until we withdraw them, and no longer than a year.</li>
+    <li>Featured Haven nominations: until we've decided, and no longer than a year.</li>
     <li>Player and haven names kept for checking: no longer than a year after we first see them.</li>
     <li>Emails: as long as needed to help you.</li>
     <li>Analytics: kept by TelemetryDeck in a form that can't be linked to you.</li>
